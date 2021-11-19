@@ -1,5 +1,3 @@
-//import java.util.Scanner;
-
 public class Respuestas{
 
     private String respuesta;
