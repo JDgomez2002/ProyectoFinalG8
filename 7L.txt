@@ -1,0 +1,3 @@
+Derivadas direccionales y gradientes
+Louis Leithold (1979). El cálculo. Estados Unidos: Harla.
+Ahora generalizamos la definicion de una derivada parcial para obtener la razon de cambio de una funcion con respecto: a cualquier direccion. Esto nos llevara al concepto de una derivada direccional. Sea f una funcion de dos variables x y y: y sea P(x, y) un punto en el plano xy.:: Supongamos que U es el vector unitario que forma un angulo de n radianes con el lado positivo del eje x.: Entonces U = cosni + sennj.

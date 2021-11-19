@@ -1,0 +1,3 @@
+Movimiento Circular Uniforme
+Ministerio de Educación MINEDUC (agosto 2019)
+En fisica, el movimiento circular uniforme (tambien denominado movimiento uniformemente circular) describe el: movimiento de un cuerpo con una rapidez constante y una trayectoria circular.:: Aunque la rapidez del objeto y la magnitud de su velocidad son constantes, en cada instante cambia de direccion.: Circunstancia que implica la existencia de una aceleracion que, si bien en este caso no varia al modulo de la: velocidad, si varia su dirección.
