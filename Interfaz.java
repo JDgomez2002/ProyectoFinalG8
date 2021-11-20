@@ -803,35 +803,32 @@ public class Interfaz{
     public int matematica(){
         if(opcion2 == 2){
             Preguntas[] preguntas = {
-                new Preguntas("1. Las mitocondrias son orgánulos celulares cuya función principal es:\n", new Respuestas[] {
-                    new Respuestas("La Fotosintesis", 'a', false),
-                    new Respuestas("La respiracion celular", 'b', true),
-                    new Respuestas("La mitosis", 'c', false),
-                    new Respuestas("La sistesis de proteinas", 'd', false)
+                new Preguntas("1. Determina la segunda derivada de f(x) = (5x+2)\n", new Respuestas[] {
+                    new Respuestas("f’’(x) = 0 ", 'a', true),
+                    new Respuestas("f’’(x) = 5x", 'b', false),
+                    new Respuestas("f’’(x) = 5", 'c', false),
+                    new Respuestas("f’’(x) = 2x", 'd', false)
                 }),
-                new Preguntas("2. La cromatina es:\n", new Respuestas[] {
-                    new Respuestas("El componente esencial del nucleolo", 'a', false),
-                    new Respuestas("Cada una de las partes de un cromosoma", 'b', false),
-                    new Respuestas("Fibras de ARN asociadas a proteínas", 'c', false),
-                    new Respuestas("Fibras de ADN empaquetadas con histonas", 'd', true)
+                new Preguntas("2. ¿A qué se le llama derivada de una función?\n", new Respuestas[] {
+                    new Respuestas("A la recta de una gráfica", 'a', false),
+                    new Respuestas("A la pendiente de la recta tangente ", 'b', true)
                 }),
-                new Preguntas("3. Tanto las células vegetales como las animales contienen:\n", new Respuestas[] {
-                    new Respuestas("Ribosomas, paredes celulares y mitocondrias", 'a', false),
-                    new Respuestas("Aparato de Golgi, paredes celulares y ribosomas", 'b', false),
-                    new Respuestas("Aparato de Golgi, ribosomas y mitocondrias", 'c', true),
-                    new Respuestas("Cloroplastos, membranas celulares y mitocondrias", 'd', false)
+                new Preguntas("3. Determina la tercera derivada de f(x) = 15x\n", new Respuestas[] {
+                    new Respuestas("f'''(x) = 15", 'a', false),
+                    new Respuestas("f'''(x) = 0 ", 'b', true),
+                    new Respuestas("f'''(x) = 5", 'c', false)
                 }),
-                new Preguntas("4. Una característica esencial de la respiración celular es que:\n", new Respuestas[] {
-                    new Respuestas("Siempre requiere oxígeno", 'a', false),
-                    new Respuestas("Genera 2 ATP por molécula de glucosa", 'b', true),
-                    new Respuestas("Sus productos finales son inorgánicos", 'c', true),
-                    new Respuestas("A y C son correctas", 'd', true)
+                new Preguntas("4. Dada la función f(x) = cos (x^2 + 3) su derivada f'(x) es igual a:\n", new Respuestas[] {
+                    new Respuestas("2xsen (x^2 + 3)", 'a', false),
+                    new Respuestas("-2xsen (x^2 + 3)", 'b', true),
+                    new Respuestas("-2xcos (x^2 + 3)", 'c', false),
+                    new Respuestas("3xcos (x^2 + 3)", 'd', false)
                 }),
-                new Preguntas("5. El reino Fungi y el reino Animal tienen en común las siguientes características:\n", new Respuestas[] {
-                    new Respuestas("Son eucariotas y autótrofos", 'a', false),
-                    new Respuestas("Son eucariotas y heterótrofos", 'b', true),
-                    new Respuestas("Son procariotas y autótrofos", 'c', false),
-                    new Respuestas("Son procariotas y heterótrofos", 'd', false)
+                new Preguntas("5. El valor de la integral Sdx/x es igual a:\n", new Respuestas[] {
+                    new Respuestas("-1/x^2 + C", 'a', false),
+                    new Respuestas("x^-2 + C", 'b', true),
+                    new Respuestas("ln(x) + C", 'c', false),
+                    new Respuestas("-ln(x) + C", 'd', false)
                 }),
 
             };
@@ -846,35 +843,35 @@ public class Interfaz{
     public int fisica(){
         if(opcion2 == 3){
             Preguntas[] preguntas = {
-                new Preguntas("1. Las mitocondrias son orgánulos celulares cuya función principal es:\n", new Respuestas[] {
-                    new Respuestas("La Fotosintesis", 'a', false),
-                    new Respuestas("La respiracion celular", 'b', true),
-                    new Respuestas("La mitosis", 'c', false),
-                    new Respuestas("La sistesis de proteinas", 'd', false)
+                new Preguntas("1. La velocidad de la luz en el vacío es c = 300 000 km/s.\nLa luz del Sol tarda en llegar a la Tierra 8 minutos y 19 segundos.\n Calcular la distancia entre el Sol y la Tierra.\n", new Respuestas[] {
+                    new Respuestas("149,700 km", 'a', false),
+                    new Respuestas("199,900,000 km", 'b', false),
+                    new Respuestas("150 km", 'c', false),
+                    new Respuestas("149,700,000 km", 'd', true)
                 }),
-                new Preguntas("2. La cromatina es:\n", new Respuestas[] {
-                    new Respuestas("El componente esencial del nucleolo", 'a', false),
-                    new Respuestas("Cada una de las partes de un cromosoma", 'b', false),
-                    new Respuestas("Fibras de ARN asociadas a proteínas", 'c', false),
-                    new Respuestas("Fibras de ADN empaquetadas con histonas", 'd', true)
+                new Preguntas("2. La rueda 1 gira a 600 rpm mientras que la 2 a 100π rad/s.\nCual de los dos posee mayor velocidad angular?\n", new Respuestas[] {
+                    new Respuestas("La rueda 1", 'a', false),
+                    new Respuestas("La rueda 2", 'b', true),
+                    new Respuestas("Tienen la misma velocidad", 'c', false),
+                    new Respuestas("No se puede obtener la velocidad angular", 'd', false)
                 }),
-                new Preguntas("3. Tanto las células vegetales como las animales contienen:\n", new Respuestas[] {
-                    new Respuestas("Ribosomas, paredes celulares y mitocondrias", 'a', false),
-                    new Respuestas("Aparato de Golgi, paredes celulares y ribosomas", 'b', false),
-                    new Respuestas("Aparato de Golgi, ribosomas y mitocondrias", 'c', true),
-                    new Respuestas("Cloroplastos, membranas celulares y mitocondrias", 'd', false)
+                new Preguntas("3. En una competencia varonil de pista y campo, la bala tiene \nuna masa de 7.30 kg y se lanza con una rapidez de 15.0 m/s a 40.0 grados \npor encima de la horizontal ubicada sobre la pierna izquierda extendida de un hombre. \nCuales son las componentes iniciales horizontal y vertical del momento lineal de esa bala?\n", new Respuestas[] {
+                    new Respuestas("84 kg * m/s en x, 70 kg * m/s en y ", 'a', true),
+                    new Respuestas("100 kg * m/s en x, 50 kg * m/s en y", 'b', false),
+                    new Respuestas("70 kg * m/s en x, 84 kg * m/s en y", 'c', false),
+                    new Respuestas("50 kg * m/s en x, 50 kg * m/s en y", 'd', false)
                 }),
-                new Preguntas("4. Una característica esencial de la respiración celular es que:\n", new Respuestas[] {
-                    new Respuestas("Siempre requiere oxígeno", 'a', false),
-                    new Respuestas("Genera 2 ATP por molécula de glucosa", 'b', true),
-                    new Respuestas("Sus productos finales son inorgánicos", 'c', true),
-                    new Respuestas("A y C son correctas", 'd', true)
+                new Preguntas("4. Una pelota de béisbol tiene masa de 0.145 kg. a) Si se lanza con una velocidad \nde 45.0 m/s y despues de batearla su velocidad es de 55.0 m/s en la direccion opuesta, \nsi la pelota esta en contacto con el bate durante 2.00 ms, \ncalcule la magnitud de la fuerza media aplicada por el bate.\n", new Respuestas[] {
+                    new Respuestas("10000 N", 'a', false),
+                    new Respuestas("7250 N", 'b', true),
+                    new Respuestas("8400 N", 'c', false),
+                    new Respuestas("14.5 N", 'd', false)
                 }),
-                new Preguntas("5. El reino Fungi y el reino Animal tienen en común las siguientes características:\n", new Respuestas[] {
-                    new Respuestas("Son eucariotas y autótrofos", 'a', false),
-                    new Respuestas("Son eucariotas y heterótrofos", 'b', true),
-                    new Respuestas("Son procariotas y autótrofos", 'c', false),
-                    new Respuestas("Son procariotas y heterótrofos", 'd', false)
+                new Preguntas("5. Un deslizador de 0.150 kg se mueve a la derecha a 0.80 m/s \nen un riel de aire horizontal sin friccion y choca de frente con un deslizador de 0.300 kg \nque se mueve a la izquierda con una rapidez de 2.20 m/s. \nCalcule la velocidad final (magnitud y dirección) de cada deslizador si el choque es elastico.\n", new Respuestas[] {
+                    new Respuestas("Va = -3.2 m/s, Vb = -0.2 m/s", 'a', true),
+                    new Respuestas(") Va = 0.2 m/s, Vb = 3.2 m/s", 'b', false),
+                    new Respuestas("Va = -0.2 m/s, Vb = -3.2 m/s", 'c', false),
+                    new Respuestas("Va = 3.2 m/s, Vb = 0.2 m/s", 'd', false)
                 }),
 
             };
