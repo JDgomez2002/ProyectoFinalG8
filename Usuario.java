@@ -18,14 +18,18 @@ import java.util.ArrayList;
   *@author Grupo 8
   *@version Class Usuario 1.1
   */
-public class Usuario {
-    private String nombre;
-    private String edad;
-    private String genero;
-    private String nivel_educativo;
-    private String ocupacion;
-    private String contrasena;
-    private ArrayList<String> historial = new ArrayList<String>();
+public abstract class Usuario {
+    protected String nombre;
+    protected String edad;
+    protected String genero;
+    protected String nivel_educativo;
+    protected String ocupacion;
+    protected String contrasena;
+    protected ArrayList<String> historial = new ArrayList<String>();
+
+
+    public abstract String[] get_datos_persistencia_usuario();
+
 
     /**
      * Constructor.
@@ -97,4 +101,5 @@ public class Usuario {
     public String get_nombre(){
       return this.nombre;
     }
+
 }

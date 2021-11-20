@@ -22,8 +22,20 @@ public class Estudiante extends Usuario{
      * @author Grupo 8
      * @version Estudiante 1.1
      */
-    public Estudiante(String contra, String nombre, String edad, String genero, String nivel, String ocupacion, String carrera){
-        super(contra, nombre, edad, genero, nivel, ocupacion);
+    public Estudiante(String nombre, String contra, String edad, String genero, String nivel, String ocupacion, String carrera){
+        super(nombre, contra, edad, genero, nivel, ocupacion);
         this.carrera = carrera;
+    }
+
+    public String[] get_datos_persistencia_usuario(){
+        String[] datos_persistencia = new String[7];
+        datos_persistencia[0] = this.nombre;
+        datos_persistencia[1] = this.contrasena;
+        datos_persistencia[2] = this.edad;
+        datos_persistencia[3] = this.genero;
+        datos_persistencia[4] = this.nivel_educativo;
+        datos_persistencia[5] = this.ocupacion;
+        datos_persistencia[6] = this.carrera;
+        return datos_persistencia;
     }
 }

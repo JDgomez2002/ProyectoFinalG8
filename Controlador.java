@@ -134,6 +134,7 @@ public class Controlador {
                 //finalizar programa
                 case 6:
                     vista.despedida();
+                    data.guardar_datos_persistencia_usuarios();
                     continuar = false;
                     break;
             

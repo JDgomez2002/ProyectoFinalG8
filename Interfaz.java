@@ -11,7 +11,7 @@
 //Estuardo José Francisco Ayala Argueta 21315
 
 import java.util.*;
-import java.time.LocalTime;
+import java.time.*;
 
 /**
  * Clase de Interfaz 
@@ -68,7 +68,11 @@ public class Interfaz{
                 System.out.println("3. Simulador de examen de admision");
                 System.out.println("4. Historial de Lecciones");
                 System.out.println("5. Mi cuenta");
-                System.out.println("6. Salir\n");
+                System.out.println("6. Salir");
+                System.out.println();
+                System.out.println("- Recuerda que la informacion de tu cuenta");
+                System.out.println(" y contrasena se guardaran automaticamente");
+                System.out.println(" al cerrar el programa...");
                 System.out.println();
                 System.out.print("Digite su opcion aqui: ");
                 sn = new Scanner(System.in);
@@ -591,24 +595,26 @@ public class Interfaz{
 
     public String solicitar_string(){
         String txt = "";
-        try{
             boolean continuar = true;
             while(continuar){
-                this.sn = new Scanner(System.in);
-                String texto = sn.nextLine();
-                if(texto.equals("")){
-                    System.out.println("\t Error: debe de ingresar un texto valido.");
+                try{
+                    this.sn = new Scanner(System.in);
+                    String texto = sn.nextLine();
+                    if(texto.equals("")){
+                        System.out.println("\t Error: debe de ingresar un texto valido.");
+                        System.out.println();
+                    }
+                    else{
+                        txt = texto;
+                        System.out.println("---------------------------------------------------------------------------------------------------------------------");
+                        continuar = false;                   
+                    }
                 }
-                else{
-                    txt = texto;
-                    System.out.println("---------------------------------------------------------------------------------------------------------------------");
-                    continuar = false;                   
+                catch(Exception e){
+                    System.out.println("\t Error: debe de ingresar un texto valido.");
+                    System.out.println();
                 }
             }
-        }
-        catch(Exception e){
-            System.out.println("\t Error: debe de ingresar un texto valido.");
-        }
         return txt;
     }
 
@@ -616,24 +622,26 @@ public class Interfaz{
         inferior -= 1;
         superior += 1;
         int entero = 0;
-        try{
             boolean continuar = true;
             while(continuar){
-                this.sn = new Scanner(System.in);
-                int numero = sn.nextInt();
-                if((numero>inferior)&&(numero<superior)){
-                    entero = numero;
-                    System.out.println("---------------------------------------------------------------------------------------------------------------------");
-                    continuar = false; 
+                try{
+                    this.sn = new Scanner(System.in);
+                    int numero = sn.nextInt();
+                    if((numero>inferior)&&(numero<superior)){
+                        entero = numero;
+                        System.out.println("---------------------------------------------------------------------------------------------------------------------");
+                        continuar = false; 
+                    }
+                    else{
+                        System.out.println("\t Error: debe de ingresar un entero valido.");                  
+                        System.out.println();
+                    }
                 }
-                else{
-                    System.out.println("\t Error: debe de ingresar un entero valido.");                  
+                catch(Exception e){
+                    System.out.println("\t Error: debe de ingresar un entero valido.");
+                    System.out.println();
                 }
-            }
-        }
-        catch(Exception e){
-            System.out.println("\t Error: debe de ingresar un entero valido.");
-        }
+            }       
         return entero;
     }
 
