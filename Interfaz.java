@@ -97,6 +97,58 @@ public class Interfaz{
         return opcion;
     }
 
+    public String solicitar_string(){
+        String txt = "";
+            boolean continuar = true;
+            while(continuar){
+                try{
+                    this.sn = new Scanner(System.in);
+                    String texto = sn.nextLine();
+                    if(texto.equals("")){
+                        System.out.println("\t Error: debe de ingresar un texto valido.");
+                        System.out.println();
+                    }
+                    else{
+                        txt = texto;
+                        System.out.println("---------------------------------------------------------------------------------------------------------------------");
+                        continuar = false;                   
+                    }
+                }
+                catch(Exception e){
+                    System.out.println("\t Error: debe de ingresar un texto valido.");
+                    System.out.println();
+                }
+            }
+        return txt;
+    }
+
+    public int solicitar_int(int inferior, int superior){
+        inferior -= 1;
+        superior += 1;
+        int entero = 0;
+            boolean continuar = true;
+            while(continuar){
+                try{
+                    this.sn = new Scanner(System.in);
+                    int numero = sn.nextInt();
+                    if((numero>inferior)&&(numero<superior)){
+                        entero = numero;
+                        System.out.println("---------------------------------------------------------------------------------------------------------------------");
+                        continuar = false; 
+                    }
+                    else{
+                        System.out.println("\t Error: debe de ingresar un entero valido.");                  
+                        System.out.println();
+                    }
+                }
+                catch(Exception e){
+                    System.out.println("\t Error: debe de ingresar un entero valido.");
+                    System.out.println();
+                }
+            }       
+        return entero;
+    }
+
     /**
      * Metodo encargado de administrar la biblioteca.
      * Utiliza el metodo indice_leccion_biblioteca y mostrar_leccion.
@@ -591,58 +643,6 @@ public class Interfaz{
         System.out.print("Digita 1 para crear una cuenta o 2 para iniciar sesion: ");
         int desicion = solicitar_int(1, 2);
         return desicion;
-    }
-
-    public String solicitar_string(){
-        String txt = "";
-            boolean continuar = true;
-            while(continuar){
-                try{
-                    this.sn = new Scanner(System.in);
-                    String texto = sn.nextLine();
-                    if(texto.equals("")){
-                        System.out.println("\t Error: debe de ingresar un texto valido.");
-                        System.out.println();
-                    }
-                    else{
-                        txt = texto;
-                        System.out.println("---------------------------------------------------------------------------------------------------------------------");
-                        continuar = false;                   
-                    }
-                }
-                catch(Exception e){
-                    System.out.println("\t Error: debe de ingresar un texto valido.");
-                    System.out.println();
-                }
-            }
-        return txt;
-    }
-
-    public int solicitar_int(int inferior, int superior){
-        inferior -= 1;
-        superior += 1;
-        int entero = 0;
-            boolean continuar = true;
-            while(continuar){
-                try{
-                    this.sn = new Scanner(System.in);
-                    int numero = sn.nextInt();
-                    if((numero>inferior)&&(numero<superior)){
-                        entero = numero;
-                        System.out.println("---------------------------------------------------------------------------------------------------------------------");
-                        continuar = false; 
-                    }
-                    else{
-                        System.out.println("\t Error: debe de ingresar un entero valido.");                  
-                        System.out.println();
-                    }
-                }
-                catch(Exception e){
-                    System.out.println("\t Error: debe de ingresar un entero valido.");
-                    System.out.println();
-                }
-            }       
-        return entero;
     }
 
     public void usuario_creado_exito(){
